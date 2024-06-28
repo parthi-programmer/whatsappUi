@@ -1,0 +1,59 @@
+$padding-val: 16px;
+
+$padding: (
+    "padding": (
+        "prefix": "p",
+        "values": (
+            "0": 0,
+            "1": $padding-val * 0.25,
+            "2": $padding-val * 0.5,
+            "3": $padding-val * 1,
+            "4": $padding-val * 1.5,
+            "5": $padding-val * 3,
+        ),
+    ),
+    "padding-left": (
+        "prefix": "pl",
+        "values": (
+            "0": 0,
+            "1": $padding-val * 0.25,
+            "2": $padding-val * 0.5,
+            "3": $padding-val * 1,
+            "4": $padding-val * 1.5,
+            "5": $padding-val * 3,
+        ),
+    ),
+    "padding-right": (
+        "prefix": "pr",
+        "values": (
+            "0": 0,
+            "1": $padding-val * 0.25,
+            "2": $padding-val * 0.5,
+            "3": $padding-val * 1,
+            "4": $padding-val * 1.5,
+            "5": $padding-val * 3,
+        ),
+    ),
+    "padding-top": (
+        "prefix": "pt",
+        "values": (
+            "0": 0,
+            "1": $padding-val * 0.25,
+            "2": $padding-val * 0.5,
+            "3": $padding-val * 1,
+            "4": $padding-val * 1.5,
+            "5": $padding-val * 3,
+        ),
+    ),
+    "padding-bottom": (
+        "prefix": "pb",
+        "values": (
+            "0": 0,
+            "1": $padding-val * 0.25,
+            "2": $padding-val * 0.5,
+            "3": $padding-val * 1,
+            "4": $padding-val * 1.5,
+            "5": $padding-val * 3,
+        ),
+    ),
+);

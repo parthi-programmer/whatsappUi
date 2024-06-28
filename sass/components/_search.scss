@@ -1,0 +1,18 @@
+.search-bar{
+    display: grid;
+    grid-template-columns: 40px auto;
+    .btn{
+        .back-icon{
+            display: none;
+        }
+        .back-icon.active{
+            display: inline;
+        }
+        .search-icon{
+            display: none;
+        }
+        .search-icon.active{
+            display: inline;
+        }
+    }
+}

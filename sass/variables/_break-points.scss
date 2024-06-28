@@ -1,0 +1,16 @@
+// Break Points
+
+$small-small-device: 575px;
+$small-device: 576px;
+$medium-device: 768px;
+$learg-device: 992px;
+$extra-learg-device: 1200px;
+$extra-extra-learg-device: 1400px;
+
+$breakpoint-val: (
+    "sm": $small-device,
+    "md": $medium-device,
+    "lg": $learg-device,
+    "xl": $extra-learg-device,
+    "xxl": $extra-extra-learg-device,
+);

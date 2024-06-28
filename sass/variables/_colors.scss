@@ -1,0 +1,15 @@
+$gray-color: #54656f;
+$green-color: #00a884;
+$dark-blue-color: #027eb5;
+$blue-color: #53bdeb;
+$text-color: #667781;
+$bg-gary-color: #f0f2f5;
+
+$colors: (
+    "primary": $bg-gary-color,
+    "secondery": $gray-color,
+    "success": $green-color,
+    "info": $blue-color,
+    "dark": $dark-blue-color,
+    "text": $text-color,
+);

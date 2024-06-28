@@ -1,0 +1,73 @@
+
+@each $property,$map in $margin{
+    $prefix: map-get($map, "prefix");
+    $value: map-get($map, "values");
+
+    @each $key, $val in $value{
+        .#{$prefix}-#{$key}{
+            #{$property}: $val;
+        }
+    }
+}
+
+@each $property,$map in $padding{
+    $prefix: map-get($map, "prefix");
+    $value: map-get($map, "values");
+
+    @each $key, $val in $value{
+        .#{$prefix}-#{$key}{
+            #{$property}: $val;
+        }
+    }
+}
+
+
+@each $property,$val in $colors{
+    .btn.btn-#{$property}{
+        background-color: $val;
+        @if($property == 'warning' or $property == 'info' or $property == 'light' or $property == 'white'){
+            color: #222;
+        }@else{
+            color: #fff;
+        }
+        &:hover{
+            background-color: darken($val, 5);
+        }
+    }
+    
+    .text-#{$property}{
+        color: $val;
+    }
+
+    @each $property1,$val1 in $border-val{
+        @for $i from 0 through 5{
+            .#{$property1}.#{$property1}-#{$i}.border-#{$property}{
+                border: $val1 * $i solid $val;
+            }
+            .#{$property1}.#{$property1}-#{$i}{
+                border: $val1 * $i solid #fff;
+            }
+        }
+    }
+
+    .bg-#{$property}{
+        background-color: $val;
+        @if($property == 'warning' or $property == 'info' or $property == 'primary' or $property == 'white'){
+            color: #222;
+        }@else{
+            color: #fff;
+        }
+    }
+}
+
+@each $property,$val in $border-radius-val{
+    @for $i from 0 through 5{
+        .#{$property}-#{$i}{
+            border-radius: $val * $i;
+        }
+    }
+    .#{$property}-rounded{
+        border-radius: 50%;
+    }
+}
+

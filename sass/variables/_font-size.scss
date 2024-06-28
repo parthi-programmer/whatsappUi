@@ -1,0 +1,26 @@
+$font: 16px;
+
+$fontsize: (
+    "font-size": (
+        "prefix": "f",
+        "values": (
+            "0": 0,
+            "1": $font * 0.25,
+            "2": $font * 0.5,
+            "3": $font * 1,
+            "4": $font * 1.5,
+            "5": $font * 3,
+        ),
+    ),
+);
+
+@each $property,$map in $fontsize{
+    $prefix: map-get($map, "prefix");
+    $value: map-get($map, "values");
+
+    @each $key, $val in $value{
+        .#{$prefix}-#{$key}{
+            #{$property}: $val;
+        }
+    }
+}

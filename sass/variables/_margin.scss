@@ -1,0 +1,59 @@
+$margin-val: 16px;
+
+$margin: (
+    "margin": (
+        "prefix": "m",
+        "values": (
+            "0": 0,
+            "1": $margin-val * 0.25,
+            "2": $margin-val * 0.5,
+            "3": $margin-val * 1,
+            "4": $margin-val * 1.5,
+            "5": $margin-val * 3,
+        ),
+    ),
+    "margin-left": (
+        "prefix": "ml",
+        "values": (
+            "0": 0,
+            "1": $margin-val * 0.25,
+            "2": $margin-val * 0.5,
+            "3": $margin-val * 1,
+            "4": $margin-val * 1.5,
+            "5": $margin-val * 3,
+        ),
+    ),
+    "margin-right": (
+        "prefix": "mr",
+        "values": (
+            "0": 0,
+            "1": $margin-val * 0.25,
+            "2": $margin-val * 0.5,
+            "3": $margin-val * 1,
+            "4": $margin-val * 1.5,
+            "5": $margin-val * 3,
+        ),
+    ),
+    "margin-top": (
+        "prefix": "mt",
+        "values": (
+            "0": 0,
+            "1": $margin-val * 0.25,
+            "2": $margin-val * 0.5,
+            "3": $margin-val * 1,
+            "4": $margin-val * 1.5,
+            "5": $margin-val * 3,
+        ),
+    ),
+    "margin-bottom": (
+        "prefix": "mb",
+        "values": (
+            "0": 0,
+            "1": $margin-val * 0.25,
+            "2": $margin-val * 0.5,
+            "3": $margin-val * 1,
+            "4": $margin-val * 1.5,
+            "5": $margin-val * 3,
+        ),
+    ),
+);
